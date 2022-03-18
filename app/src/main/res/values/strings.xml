@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">True Random Number Generator</string>
+    <string name="number_placeholder">0</string>
+    <string name="only_odd_numbers">Only odd numbers</string>
+    <string name="all_numbers">All numbers</string>
+    <string name="your_generated_number_is">Your generated number is</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="only_even_numbers">Only even numbers</string>
+    <string name="range">Range:</string>
+    <string name="to">to</string>
+    <string name="generate_a_new_random_number">Generate a new random number</string>
+    <string name="app_icon">App Icon</string>
+    <string name="dev_name">ToxicFlame427</string>
+</resources>
