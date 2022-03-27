@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrueRandomNumberGenerator">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9027801021996248~4615901816"/>
+<!--        ca-app-pub-3940256099942544/6300978111-->
+
         <activity
             android:name=".Splash"
             android:exported="true"

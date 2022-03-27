@@ -3,6 +3,8 @@ package com.toxicflame427.truerandomnumbergenerator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.toxicflame427.truerandomnumbergenerator.databinding.ActivityMainBinding
 import kotlin.random.Random
 
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         applyEvents()
+        loadAds()
     }
 
     private fun applyEvents(){
@@ -87,5 +90,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun generateRandomNumber(start : Int, stop : Int) : Int{
         return random.nextInt(start, stop)
+    }
+
+    private fun loadAds(){
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        binding.mainAd.loadAd(adRequest)
     }
 }
